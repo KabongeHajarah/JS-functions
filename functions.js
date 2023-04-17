@@ -50,11 +50,14 @@ console.log(quantitiesInKgs);
 
 // Write a function to calculate the total number of items in the inventory.
 function calculateTotalItems() {
-   console.log(itemNames.length);
+  let total=0;
+  for (let i = 0; i< quantitiesInKgs.length; i++) {
+  total+=quantitiesInKgs[i]
+  } return total
   
   
 }
-calculateTotalItems();
+console.log(calculateTotalItems());
 
 
 // Write a function to find the item with the lowest stock quantity.
